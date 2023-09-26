@@ -20,7 +20,7 @@ Demo Form
     Page Should Contain List  name:DateOfBirthYear
     Select From List By Value  name:DateOfBirthYear  2000
 
-    Input Text    id:Email    1111@gmail.com
+    Input Text    id:Email    1888611@gmail.com
 
     Input Text    id:Company    I am beautiful
     
@@ -30,6 +30,9 @@ Demo Form
     Input Text    id:ConfirmPassword    hhhhhh1234
 
     Click Button  id:register-button
+
+    ${registersuccess}  Get Text  class:result
+    Log To Console  ${registersuccess}
 
     sleep  2s
     Close Browser
