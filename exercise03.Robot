@@ -17,7 +17,7 @@ Demo Login
     Sleep  1s
     Click Element  //a[contains(text(),'Proceed to Checkout')]  #x-path
     Sleep  1s
-    Input Text  name:username  j2ee
+    Input Text   css:input[name=username]  j2ee
     Click Element  //body/div[@id='Content']/div[@id='Catalog']/form[1]/input[1]  #x-path
     Sleep  1s
     Close Browser
